@@ -1,0 +1,19 @@
+{
+  "name": "react-native-zsxpay",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhengshengxi/react-native-zsxpay.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhengshengxi/react-native-zsxpay/issues"
+  },
+  "homepage": "https://github.com/zhengshengxi/react-native-zsxpay#readme"
+}

@@ -1,0 +1,377 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		073135C620A2827500F71871 /* libPaymentControl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 073135B720A2827500F71871 /* libPaymentControl.a */; };
+		073135C720A2827500F71871 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 073135BD20A2827500F71871 /* libWeChatSDK.a */; };
+		073135C920A2827600F71871 /* APOrderInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 073135C120A2827500F71871 /* APOrderInfo.m */; };
+		073135CB20A2827600F71871 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 073135C420A2827500F71871 /* AlipaySDK.framework */; };
+		073135CD20A283F400F71871 /* libAlipaySDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 073135CC20A283F400F71871 /* libAlipaySDK.a */; };
+		07C7985B20A16BCD00CD78CE /* ZSXPay.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C7985A20A16BCD00CD78CE /* ZSXPay.m */; };
+		07C7985C20A16BCD00CD78CE /* ZSXPay.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 07C7985920A16BCD00CD78CE /* ZSXPay.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		07C7985420A16BCD00CD78CE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				07C7985C20A16BCD00CD78CE /* ZSXPay.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		073135B620A2827500F71871 /* UPPaymentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPPaymentControl.h; sourceTree = "<group>"; };
+		073135B720A2827500F71871 /* libPaymentControl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPaymentControl.a; sourceTree = "<group>"; };
+		073135B920A2827500F71871 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		073135BA20A2827500F71871 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		073135BB20A2827500F71871 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		073135BC20A2827500F71871 /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		073135BD20A2827500F71871 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		073135C020A2827500F71871 /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
+		073135C120A2827500F71871 /* APOrderInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APOrderInfo.m; sourceTree = "<group>"; };
+		073135C220A2827500F71871 /* APOrderInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APOrderInfo.h; sourceTree = "<group>"; };
+		073135C420A2827500F71871 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
+		073135CC20A283F400F71871 /* libAlipaySDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAlipaySDK.a; sourceTree = "<group>"; };
+		07C7985620A16BCD00CD78CE /* libZSXPay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libZSXPay.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		07C7985920A16BCD00CD78CE /* ZSXPay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSXPay.h; sourceTree = "<group>"; };
+		07C7985A20A16BCD00CD78CE /* ZSXPay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSXPay.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07C7985320A16BCD00CD78CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				073135C720A2827500F71871 /* libWeChatSDK.a in Frameworks */,
+				073135CB20A2827600F71871 /* AlipaySDK.framework in Frameworks */,
+				073135CD20A283F400F71871 /* libAlipaySDK.a in Frameworks */,
+				073135C620A2827500F71871 /* libPaymentControl.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		073135B520A2827500F71871 /* UPPay */ = {
+			isa = PBXGroup;
+			children = (
+				073135B620A2827500F71871 /* UPPaymentControl.h */,
+				073135B720A2827500F71871 /* libPaymentControl.a */,
+			);
+			path = UPPay;
+			sourceTree = "<group>";
+		};
+		073135B820A2827500F71871 /* WeChat */ = {
+			isa = PBXGroup;
+			children = (
+				073135B920A2827500F71871 /* WXApi.h */,
+				073135BA20A2827500F71871 /* WXApiObject.h */,
+				073135BB20A2827500F71871 /* README.txt */,
+				073135BC20A2827500F71871 /* WechatAuthSDK.h */,
+				073135BD20A2827500F71871 /* libWeChatSDK.a */,
+			);
+			path = WeChat;
+			sourceTree = "<group>";
+		};
+		073135BF20A2827500F71871 /* Alipay */ = {
+			isa = PBXGroup;
+			children = (
+				073135C020A2827500F71871 /* AlipaySDK.bundle */,
+				073135C120A2827500F71871 /* APOrderInfo.m */,
+				073135C220A2827500F71871 /* APOrderInfo.h */,
+				073135CC20A283F400F71871 /* libAlipaySDK.a */,
+				073135C420A2827500F71871 /* AlipaySDK.framework */,
+			);
+			path = Alipay;
+			sourceTree = "<group>";
+		};
+		07C7984D20A16BCD00CD78CE = {
+			isa = PBXGroup;
+			children = (
+				07C7985820A16BCD00CD78CE /* ZSXPay */,
+				07C7985720A16BCD00CD78CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		07C7985720A16BCD00CD78CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07C7985620A16BCD00CD78CE /* libZSXPay.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07C7985820A16BCD00CD78CE /* ZSXPay */ = {
+			isa = PBXGroup;
+			children = (
+				073135BF20A2827500F71871 /* Alipay */,
+				073135B520A2827500F71871 /* UPPay */,
+				073135B820A2827500F71871 /* WeChat */,
+				07C7985920A16BCD00CD78CE /* ZSXPay.h */,
+				07C7985A20A16BCD00CD78CE /* ZSXPay.m */,
+			);
+			path = ZSXPay;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07C7985520A16BCD00CD78CE /* ZSXPay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07C7985F20A16BCD00CD78CE /* Build configuration list for PBXNativeTarget "ZSXPay" */;
+			buildPhases = (
+				07C7985220A16BCD00CD78CE /* Sources */,
+				07C7985320A16BCD00CD78CE /* Frameworks */,
+				07C7985420A16BCD00CD78CE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZSXPay;
+			productName = ZSXPay;
+			productReference = 07C7985620A16BCD00CD78CE /* libZSXPay.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07C7984E20A16BCD00CD78CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "yh-zsx";
+				TargetAttributes = {
+					07C7985520A16BCD00CD78CE = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 07C7985120A16BCD00CD78CE /* Build configuration list for PBXProject "ZSXPay" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 07C7984D20A16BCD00CD78CE;
+			productRefGroup = 07C7985720A16BCD00CD78CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07C7985520A16BCD00CD78CE /* ZSXPay */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07C7985220A16BCD00CD78CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07C7985B20A16BCD00CD78CE /* ZSXPay.m in Sources */,
+				073135C920A2827600F71871 /* APOrderInfo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		07C7985D20A16BCD00CD78CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		07C7985E20A16BCD00CD78CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07C7986020A16BCD00CD78CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZSXPay/Alipay",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../react-native/React/**",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/UPPay",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZSXPay/UPPay",
+					"$(PROJECT_DIR)/ZSXPay/WeChat",
+					"$(PROJECT_DIR)/ZSXPay/Alipay",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		07C7986120A16BCD00CD78CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZSXPay/Alipay",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../react-native/React/**",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/UPPay",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZSXPay/UPPay",
+					"$(PROJECT_DIR)/ZSXPay/WeChat",
+					"$(PROJECT_DIR)/ZSXPay/Alipay",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07C7985120A16BCD00CD78CE /* Build configuration list for PBXProject "ZSXPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07C7985D20A16BCD00CD78CE /* Debug */,
+				07C7985E20A16BCD00CD78CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07C7985F20A16BCD00CD78CE /* Build configuration list for PBXNativeTarget "ZSXPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07C7986020A16BCD00CD78CE /* Debug */,
+				07C7986120A16BCD00CD78CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07C7984E20A16BCD00CD78CE /* Project object */;
+}
