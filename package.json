@@ -1,19 +1,37 @@
 {
-  "name": "react-native-zsxpay",
-  "version": "1.0.0",
+  "_from": "react-native-zsxpay",
+  "_id": "react-native-zsxpay@1.0.1",
+  "_inBundle": false,
+  "_integrity": "sha512-jAdb/yMbzobEM/Wzjuz/jb6/GJY6b4xZVGGutyNXrOFhJgdCEsVgjh47IBeQJUxCBi9BvMpPhwKwO0a9bpzt+g==",
+  "_location": "/react-native-zsxpay",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "react-native-zsxpay",
+    "name": "react-native-zsxpay",
+    "escapedName": "react-native-zsxpay",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-native-zsxpay/-/react-native-zsxpay-1.0.1.tgz",
+  "_shasum": "b1d93a916fe77251a2a4355f0726e4ce91789f56",
+  "_spec": "react-native-zsxpay",
+  "_where": "/Users/yh-zsx/Desktop/File/push_npm/RNProject/ZSXPay",
+  "author": "",
+  "bundleDependencies": false,
+  "deprecated": false,
   "description": "",
+  "license": "ISC",
   "main": "index.js",
+  "name": "react-native-zsxpay",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/zhengshengxi/react-native-zsxpay.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/zhengshengxi/react-native-zsxpay/issues"
-  },
-  "homepage": "https://github.com/zhengshengxi/react-native-zsxpay#readme"
+  "version": "1.0.1"
 }

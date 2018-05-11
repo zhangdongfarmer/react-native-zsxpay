@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0719222E20A54BEF000D94D9 /* AlipaySDK in Frameworks */ = {isa = PBXBuildFile; fileRef = 0719222D20A54BEF000D94D9 /* AlipaySDK */; };
 		073135C620A2827500F71871 /* libPaymentControl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 073135B720A2827500F71871 /* libPaymentControl.a */; };
 		073135C720A2827500F71871 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 073135BD20A2827500F71871 /* libWeChatSDK.a */; };
 		073135C920A2827600F71871 /* APOrderInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 073135C120A2827500F71871 /* APOrderInfo.m */; };
 		073135CB20A2827600F71871 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 073135C420A2827500F71871 /* AlipaySDK.framework */; };
-		073135CD20A283F400F71871 /* libAlipaySDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 073135CC20A283F400F71871 /* libAlipaySDK.a */; };
 		07C7985B20A16BCD00CD78CE /* ZSXPay.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C7985A20A16BCD00CD78CE /* ZSXPay.m */; };
 		07C7985C20A16BCD00CD78CE /* ZSXPay.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 07C7985920A16BCD00CD78CE /* ZSXPay.h */; };
 /* End PBXBuildFile section */
@@ -30,6 +30,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0719222D20A54BEF000D94D9 /* AlipaySDK */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = AlipaySDK; path = AlipaySDK.framework/AlipaySDK; sourceTree = "<group>"; };
 		073135B620A2827500F71871 /* UPPaymentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPPaymentControl.h; sourceTree = "<group>"; };
 		073135B720A2827500F71871 /* libPaymentControl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPaymentControl.a; sourceTree = "<group>"; };
 		073135B920A2827500F71871 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
@@ -41,7 +42,6 @@
 		073135C120A2827500F71871 /* APOrderInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APOrderInfo.m; sourceTree = "<group>"; };
 		073135C220A2827500F71871 /* APOrderInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APOrderInfo.h; sourceTree = "<group>"; };
 		073135C420A2827500F71871 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
-		073135CC20A283F400F71871 /* libAlipaySDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAlipaySDK.a; sourceTree = "<group>"; };
 		07C7985620A16BCD00CD78CE /* libZSXPay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libZSXPay.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		07C7985920A16BCD00CD78CE /* ZSXPay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSXPay.h; sourceTree = "<group>"; };
 		07C7985A20A16BCD00CD78CE /* ZSXPay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSXPay.m; sourceTree = "<group>"; };
@@ -54,8 +54,8 @@
 			files = (
 				073135C720A2827500F71871 /* libWeChatSDK.a in Frameworks */,
 				073135CB20A2827600F71871 /* AlipaySDK.framework in Frameworks */,
-				073135CD20A283F400F71871 /* libAlipaySDK.a in Frameworks */,
 				073135C620A2827500F71871 /* libPaymentControl.a in Frameworks */,
+				0719222E20A54BEF000D94D9 /* AlipaySDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,10 +86,10 @@
 		073135BF20A2827500F71871 /* Alipay */ = {
 			isa = PBXGroup;
 			children = (
+				0719222D20A54BEF000D94D9 /* AlipaySDK */,
 				073135C020A2827500F71871 /* AlipaySDK.bundle */,
 				073135C120A2827500F71871 /* APOrderInfo.m */,
 				073135C220A2827500F71871 /* APOrderInfo.h */,
-				073135CC20A283F400F71871 /* libAlipaySDK.a */,
 				073135C420A2827500F71871 /* AlipaySDK.framework */,
 			);
 			path = Alipay;
