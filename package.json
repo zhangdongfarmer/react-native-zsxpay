@@ -1,7 +1,7 @@
 {
   "name": "react-native-zsxpay",
-  "version": "1.0.2",
-  "description": "",
+  "version": "1.0.3",
+  "description": "ReactNative 集成微信、支付宝、银联支付（测试中...） ##安装说明 ######使用：npm install react-native-zsxpay 命令执行导入 ######使用：react-native link 自动配置环境",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

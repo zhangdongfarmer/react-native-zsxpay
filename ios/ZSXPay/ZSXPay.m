@@ -10,7 +10,14 @@
 #import <AlipaySDK/AlipaySDK.h>
 #import "UPPaymentControl.h"
 
-@implementation ZSXPay
+// Define error messages
+#define NOT_REGISTERED (@"registerApp required.")
+#define INVOKE_FAILED (@"WeChat API invoke returns false.")
+
+@implementation ZSXPay {
+    RCTResponseSenderBlock wxCallBack;
+    RCTResponseSenderBlock upCallBack;
+}
 
 - (instancetype)init
 {
@@ -50,7 +57,7 @@
 }
 
 -(void)onResp:(BaseResp *)resp {
-    NSLog(@"");
+    wxCallBack(@[@(0)]);
 }
 #pragma mark end
 
@@ -69,31 +76,38 @@ RCT_EXPORT_METHOD(pay:(NSString *)info) {
     NSLog(@"%@",info);
 }
 #pragma mark 微信接口
-RCT_EXPORT_METHOD(wechat_pay:(NSDictionary *)param) {
-    [WXApi registerApp:@"wxff2f053dffe7c8b6"];
-    if ([param isKindOfClass:[NSMutableDictionary class]] || [param isKindOfClass:[NSDictionary class]]) {
+RCT_EXPORT_METHOD(wechat_registerAppWithAppId:(NSString *)appid :(RCTResponseSenderBlock)callback)
+{
+    callback(@[[WXApi registerApp:appid] ? [NSNull null] : INVOKE_FAILED]);
+}
+RCT_EXPORT_METHOD(wechat_pay:(NSDictionary *)param:(RCTResponseSenderBlock)callback) {
+    wxCallBack = callback;
+    if (( [param isKindOfClass:[NSMutableDictionary class]] || [param isKindOfClass:[NSDictionary class]] ) && param.allKeys.count) {
         PayReq *request       = [[PayReq alloc] init];
-        request.partnerId     = [NSString stringWithFormat:@"%@1",param[@"partnerid"]];
-        request.prepayId      = [NSString stringWithFormat:@"%@1",param[@"prepayid"]];
-        request.package       = [NSString stringWithFormat:@"%@1",param[@"package"]];
-        request.nonceStr      = [NSString stringWithFormat:@"%@1",param[@"noncestr"]];
-        request.timeStamp     = [[NSDate date]timeIntervalSince1970];
-        request.sign          = [NSString stringWithFormat:@"%@1",param[@"sign"]];
+        request.partnerId     = [NSString stringWithFormat:@"%@",param[@"partnerid"]];
+        request.prepayId      = [NSString stringWithFormat:@"%@",param[@"prepayid"]];
+        request.package       = [NSString stringWithFormat:@"%@",param[@"package"]];
+        request.nonceStr      = [NSString stringWithFormat:@"%@",param[@"noncestr"]];
+        request.timeStamp     = [[NSString stringWithFormat:@"%@",param[@"timeStamp"]]intValue];
+        request.sign          = [NSString stringWithFormat:@"%@",param[@"sign"]];
         [WXApi sendReq:request];
+    }
+    else {
+        wxCallBack(@[@(-1)]);
     }
 }
 
 RCT_EXPORT_METHOD(wechat_isWXAppInstalled:(RCTResponseSenderBlock)callback)
 {
-    callback(@[[NSNull null], @([WXApi isWXAppInstalled])]);
+    callback(@[@([WXApi isWXAppInstalled])]);
 }
 #pragma mark end
 
-RCT_EXPORT_METHOD(alipay_pay:(NSString *)orderString) {
+RCT_EXPORT_METHOD(alipay_pay:(NSString *)orderString:(NSString *)scheme:(RCTResponseSenderBlock)callback) {
     if (orderString.length) {
         // NOTE: 调用支付结果开始支付
-        [[AlipaySDK defaultService] payOrder:orderString fromScheme:@"testAlipayScheme" callback:^(NSDictionary *resultDic) {
-            NSLog(@"reslut = %@",resultDic);
+        [[AlipaySDK defaultService] payOrder:orderString fromScheme:scheme callback:^(NSDictionary *resultDic) {
+            callback(@[resultDic]);
         }];
     }
 }
